@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".compose">
+
+    <LinearLayout
+        android:id="@+id/banner_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:background="#C0E3FF"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/banner_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/handelson_two"
+                android:text="@string/act3"
+                android:textSize="35sp"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="155dp"
+            android:contentDescription="@string/top_img"
+            app:srcCompat="@drawable/smurfgirl" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/top_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/banner_layout">
+
+        <ImageButton
+            android:id="@+id/arrow_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:contentDescription="@string/back"
+            app:srcCompat="@drawable/arrow"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/question_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="8dp"
+        android:paddingHorizontal="4dp"
+        android:paddingVertical="3dp"
+        android:background="@drawable/border"
+        app:layout_constraintTop_toBottomOf="@id/top_line">
+
+        <Button
+            android:id="@+id/number1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="21sp"
+            android:textColor="@color/black"
+            android:backgroundTint="#D1FEFF"
+            android:clickable="false"/>
+
+        <TextView
+            android:id="@+id/sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:textSize="26sp"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/number2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="21sp"
+            android:textColor="@color/black"
+            android:backgroundTint="#D1FEFF"
+            android:clickable="false"/>
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="0dp"
+            android:textSize="26sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/symbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_marginHorizontal="2dp"
+            android:textSize="26sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/first_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/question_line">
+
+        <Button
+            android:id="@+id/random1"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="0dp"
+            android:textSize="28sp"
+            android:textColor="@color/black"
+            android:backgroundTint="#94CFFF"
+            android:contentDescription="@string/num1"
+            style="?android:attr/buttonBarButtonStyle" />
+
+        <Button
+            android:id="@+id/random2"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="0dp"
+            android:textSize="28sp"
+            android:textColor="@color/black"
+            android:backgroundTint="#94CFFF"
+            android:contentDescription="@string/num2"
+            style="?android:attr/buttonBarButtonStyle" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/second_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/first_line">
+
+        <Button
+            android:id="@+id/random3"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="0dp"
+            android:textSize="28sp"
+            android:textColor="@color/black"
+            android:backgroundTint="#94CFFF"
+            android:contentDescription="@string/num3"
+            style="?android:attr/buttonBarButtonStyle" />
+
+        <Button
+            android:id="@+id/random4"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="0dp"
+            android:textSize="28sp"
+            android:textColor="@color/black"
+            android:backgroundTint="#94CFFF"
+            android:contentDescription="@string/num4"
+            style="?android:attr/buttonBarButtonStyle" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/message_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/second_line">
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="15dp"
+            android:paddingHorizontal="10dp"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="100dp"
+        app:layout_constraintTop_toBottomOf="@id/message_line">
+
+        <Button
+            android:id="@+id/clear_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/clear"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:backgroundTint="#A7B9E8"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/clear">
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="30dp"
+            android:text="@string/next"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:backgroundTint="#DFE8F8" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/next"
+        app:layout_constraintBottom_toBottomOf="parent" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/bottom_img"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/smurf"
+            app:layout_constraintEnd_toEndOf="@id/next"
+            app:layout_constraintStart_toStartOf="@id/next"
+            app:layout_constraintTop_toBottomOf="@id/next" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

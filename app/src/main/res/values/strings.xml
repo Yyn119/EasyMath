@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">EasyMath</string>
+    <string name="logo">Title logo</string>
+    <string name="act1">Compare Numbers</string>
+    <string name="act1_button">Compare Numbers Image</string>
+    <string name="act2">Numbers Ordering</string>
+    <string name="act2_button">Numbers Ordering Image</string>
+    <string name="act3">Compose Numbers</string>
+    <string name="act3_button">Compose Numbers Image</string>
+    <string name="back">Back to Home Page</string>
+    <string name="smaller">Select the smaller number</string>
+    <string name="larger">Select the larger number</string>
+    <string name="asc">Order the numbers in ASCENDING</string>
+    <string name="dsc">Order the numbers in DESCENDING</string>
+    <string name="equal"> </string>
+    <string name="equal_ques">%s=  %d</string>
+    <string name="num1">Number 1</string>
+    <string name="num2">Number 2</string>
+    <string name="num3">Number 3</string>
+    <string name="num4">Number 4</string>
+    <string name="num5">Number 5</string>
+    <string name="answer">Answer: </string>
+    <string name="complete">Complete, check your result!!</string>
+    <string name="repeat">Repeated Answer</string>
+    <string name="check">Check</string>
+    <string name="undone">Please done sorting all numbers!</string>
+    <string name="bingo">Bingo!! Well done! Try Next</string>
+    <string name="wrong">Uh-Oh You are so close! Try Again</string>
+    <string name="clear">Clear</string>
+    <string name="next">Next Question</string>
+    <string name="top_img">Top Image</string>
+    <string name="bottom_img">Bottom Image</string>
+
+
+
+</resources>
